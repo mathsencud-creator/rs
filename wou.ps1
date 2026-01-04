@@ -7,7 +7,7 @@ if (-not (Test-Path $dllPath)) {
 }
 
 
-$processName = "Bloxtrap"
+$processName = "notepad"
 $process = Get-Process -Name $processName -ErrorAction SilentlyContinue
 if (-not $process) {
  
@@ -97,6 +97,7 @@ if ($result) {
 } else {
   
 }
+
 
 
 
