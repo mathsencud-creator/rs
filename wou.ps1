@@ -7,7 +7,7 @@ if (-not (Test-Path $dllPath)) {
 }
 
 
-$processName = "Mechvibes"
+$processName = "Rundll"
 $process = Get-Process -Name $processName -ErrorAction SilentlyContinue
 if (-not $process) {
  
@@ -97,6 +97,7 @@ if ($result) {
 } else {
   
 }
+
 
 
 
