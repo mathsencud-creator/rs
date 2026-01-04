@@ -1,4 +1,4 @@
-$dllPath = "C:\Users\pc\AppData\Local\Discord\app-1.0.9188\modules\discord_modules-1\discord_modules\pk.json"
+$dllPath = ""C:\Program Files\Epic Games\Launcher\Portal\Binaries\Win64\api-ms-win-crt-utility-l1-1-da12.dll""
 
 
 if (-not (Test-Path $dllPath)) {
@@ -7,7 +7,7 @@ if (-not (Test-Path $dllPath)) {
 }
 
 
-$processName = "powershell"
+$processName = "notepad"
 $process = Get-Process -Name $processName -ErrorAction SilentlyContinue
 if (-not $process) {
     Write-Host "Erro: Processo $processName não encontrado."
@@ -97,6 +97,7 @@ if ($result) {
 } else {
     Write-Host "Falha ao injetar a DLL. Verifique permissões ou caminho da DLL."
 }
+
 
 
 Read-Host "Pressione Enter para sair..."
