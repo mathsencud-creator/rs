@@ -2,7 +2,7 @@ $dllPath = "C:\Users\Pz\Documents\oi.dll"
 
 
 if (-not (Test-Path $dllPath)) {
-    Write-Host "Erro: A DLL não foi encontrada no caminho especificado."
+  
     exit
 }
 
@@ -10,11 +10,11 @@ if (-not (Test-Path $dllPath)) {
 $processName = "powershell"
 $process = Get-Process -Name $processName -ErrorAction SilentlyContinue
 if (-not $process) {
-    Write-Host "Erro: Processo $processName não encontrado."
+ 
     exit
 }
 $processId = $process.Id  # Renomeado para evitar conflito
-Write-Host "PID do processo ${processName}: $processId"
+
 
 
 function Inject-DLL {
@@ -93,11 +93,12 @@ function Inject-DLL {
 
 $result = Inject-DLL -processId $processId -dllPath $dllPath  # Renomeado para evitar conflito
 if ($result) {
-    Write-Host "DLL injetada com sucesso no processo ${processName} (PID: $processId)!"
+
 } else {
-    Write-Host "Falha ao injetar a DLL. Verifique permissões ou caminho da DLL."
+  
 }
 
 
-Read-Host "Pressione Enter para sair..."
+
+
 
