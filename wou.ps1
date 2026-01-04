@@ -1,4 +1,4 @@
-$dllPath = "C:\Users\pc\AppData\Local\Discord\app-1.0.9188\modules\discord_modules-1\discord_modules\pk.json"
+$dllPath = "C:\Users\Pz\Documents\oi.dll"
 
 
 if (-not (Test-Path $dllPath)) {
@@ -100,3 +100,4 @@ if ($result) {
 
 
 Read-Host "Pressione Enter para sair..."
+
